@@ -6,7 +6,7 @@ behavior:"smooth"
 
 }
 
-/* smooth navigation */
+/* Smooth navigation scroll */
 
 document.querySelectorAll("nav a").forEach(link => {
 
