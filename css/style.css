@@ -5,81 +5,117 @@ background:#f4f6f8;
 color:#333;
 }
 
-header{
-background:#1e2a38;
-color:white;
-padding:40px;
-text-align:center;
-}
+/* NAVBAR */
 
 nav{
-background:#2d3e50;
-text-align:center;
-padding:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#1e2a38;
+padding:15px 40px;
+color:white;
 }
 
-nav a{
+nav ul{
+list-style:none;
+display:flex;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
 color:white;
-margin:15px;
 text-decoration:none;
 font-weight:bold;
 }
 
-nav a:hover{
+nav ul li a:hover{
 color:#00bcd4;
 }
 
+/* HERO */
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:#2d3e50;
+color:white;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:#00bcd4;
+color:white;
+font-size:16px;
+cursor:pointer;
+border-radius:6px;
+}
+
+/* SECTIONS */
+
 section{
-padding:40px;
 max-width:900px;
 margin:auto;
+padding:60px 20px;
 }
 
 h2{
-margin-bottom:20px;
-color:#1e2a38;
+margin-bottom:25px;
 }
+
+/* CARDS */
 
 .card{
 background:white;
 padding:20px;
 margin-bottom:20px;
 border-radius:8px;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-list-style:none;
-padding:0;
+/* SKILLS */
+
+.skill{
+margin-bottom:20px;
 }
 
-.skills li{
-background:#00bcd4;
-color:white;
-padding:8px 15px;
+.bar{
+height:10px;
+background:#ddd;
 border-radius:20px;
 }
 
-button{
-background:#1e2a38;
-color:white;
-padding:12px 20px;
-border:none;
-border-radius:6px;
-cursor:pointer;
+.progress{
+height:10px;
+border-radius:20px;
 }
 
-button:hover{
-background:#00bcd4;
+.java{width:85%; background:#00bcd4;}
+.selenium{width:90%; background:#00bcd4;}
+.testing{width:88%; background:#00bcd4;}
+.agile{width:80%; background:#00bcd4;}
+
+/* CERTIFICATIONS */
+
+.certs{
+list-style:square;
+padding-left:20px;
 }
+
+/* FOOTER */
 
 footer{
 text-align:center;
-padding:20px;
 background:#1e2a38;
 color:white;
+padding:20px;
 margin-top:40px;
 }
