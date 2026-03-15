@@ -1,8 +1,18 @@
-body{
-font-family: Arial;
+/* Reset */
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+
+body{
 background:#f4f6f8;
 color:#333;
+line-height:1.6;
 }
 
 /* NAVBAR */
@@ -14,6 +24,8 @@ align-items:center;
 background:#1e2a38;
 padding:15px 40px;
 color:white;
+position:sticky;
+top:0;
 }
 
 nav ul{
@@ -22,30 +34,40 @@ display:flex;
 }
 
 nav ul li{
-margin-left:20px;
+margin-left:25px;
 }
 
 nav ul li a{
-color:white;
 text-decoration:none;
+color:white;
 font-weight:bold;
+transition:0.3s;
 }
 
 nav ul li a:hover{
 color:#00bcd4;
 }
 
+.logo{
+font-size:22px;
+}
+
 /* HERO */
 
 .hero{
-text-align:center;
-padding:100px 20px;
 background:#2d3e50;
 color:white;
+text-align:center;
+padding:100px 20px;
 }
 
 .hero h1{
-font-size:48px;
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+margin:8px 0;
 }
 
 .hero button{
@@ -55,8 +77,13 @@ border:none;
 background:#00bcd4;
 color:white;
 font-size:16px;
-cursor:pointer;
 border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#0197a7;
 }
 
 /* SECTIONS */
@@ -69,9 +96,10 @@ padding:60px 20px;
 
 h2{
 margin-bottom:25px;
+color:#1e2a38;
 }
 
-/* CARDS */
+/* CARD */
 
 .card{
 background:white;
@@ -79,6 +107,10 @@ padding:20px;
 margin-bottom:20px;
 border-radius:8px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin-bottom:10px;
 }
 
 /* SKILLS */
@@ -91,6 +123,7 @@ margin-bottom:20px;
 height:10px;
 background:#ddd;
 border-radius:20px;
+overflow:hidden;
 }
 
 .progress{
@@ -98,24 +131,48 @@ height:10px;
 border-radius:20px;
 }
 
-.java{width:85%; background:#00bcd4;}
-.selenium{width:90%; background:#00bcd4;}
-.testing{width:88%; background:#00bcd4;}
-.agile{width:80%; background:#00bcd4;}
+.java{
+width:85%;
+background:#00bcd4;
+}
+
+.selenium{
+width:90%;
+background:#00bcd4;
+}
+
+.testing{
+width:88%;
+background:#00bcd4;
+}
+
+.agile{
+width:80%;
+background:#00bcd4;
+}
 
 /* CERTIFICATIONS */
 
 .certs{
-list-style:square;
 padding-left:20px;
+}
+
+.certs li{
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+#contact p{
+margin-bottom:10px;
 }
 
 /* FOOTER */
 
 footer{
-text-align:center;
 background:#1e2a38;
 color:white;
+text-align:center;
 padding:20px;
 margin-top:40px;
 }
