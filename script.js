@@ -1,22 +1,20 @@
-// Show welcome message when the page loads
-window.onload = function () {
-    console.log("Welcome to my portfolio website!");
-};
+function downloadResume(){
 
+alert("Resume download will be added here.");
 
-// Example button action
-function showMessage() {
-    alert("Thanks for visiting my portfolio!");
 }
 
+// smooth scrolling
+document.querySelectorAll("nav a").forEach(link => {
 
-// Smooth scroll for navigation links (if you add navbar later)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
+link.addEventListener("click", function(e){
 
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
-    });
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+behavior:"smooth"
+});
+
+});
+
 });
