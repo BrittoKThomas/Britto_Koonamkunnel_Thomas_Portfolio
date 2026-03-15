@@ -1,20 +1,23 @@
-function downloadResume(){
+function scrollContact(){
 
-alert("Resume download will be added here.");
+document.querySelector("#contact").scrollIntoView({
+behavior:"smooth"
+})
 
 }
 
-// smooth scrolling
+/* smooth navigation */
+
 document.querySelectorAll("nav a").forEach(link => {
 
 link.addEventListener("click", function(e){
 
-e.preventDefault();
+e.preventDefault()
 
 document.querySelector(this.getAttribute("href")).scrollIntoView({
 behavior:"smooth"
-});
+})
 
-});
+})
 
-});
+})
