@@ -126,12 +126,14 @@ nav ul li a:hover{
 color:#00bcd4;
 }
 
-
-
 .logo{
 color: white;
 font-size: 22px;
 font-weight: bold;
+}
+
+.logo{
+color: white !important;
 }
 
 /* HERO */
