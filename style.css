@@ -9,6 +9,63 @@ font-family:Arial, Helvetica, sans-serif;
 
 /* BODY */
 
+.hero{
+background: linear-gradient(135deg,#1e2a38,#00bcd4);
+color:white;
+padding:100px 20px;
+}
+
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:80px;
+flex-wrap:wrap;
+}
+
+.hero-image img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.typing{
+font-size:20px;
+font-weight:bold;
+margin:15px 0;
+color:#fff;
+}
+
+.dark-mode{
+background:#121212;
+color:#eee;
+}
+
+.dark-mode nav{
+background:#000;
+}
+
+.dark-mode .card{
+background:#1e1e1e;
+color:#eee;
+}
+
+.dark-mode footer{
+background:#000;
+}
+
+#darkToggle{
+background:none;
+border:none;
+font-size:20px;
+color:white;
+cursor:pointer;
+margin-left:20px;
+}
+
 body{
 background:#f4f6f8;
 color:#333;
